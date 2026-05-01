@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# App generated files
+uploads/
+audio_output/
+*.db
+
+# IDE
+.vscode/
+.idea/

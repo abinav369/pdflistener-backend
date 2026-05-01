@@ -135,7 +135,7 @@ def convert_document_to_audio(file_path: str) -> dict:
     """
     text = extract_text(file_path)
     if not text:
-        raise ValueError("No extractable text found in the document.")
+        text = "This document appears to contain no readable text. It might be an image-based scan."
 
     audio_filename = f"{uuid.uuid4().hex}.mp3"
     audio_path = os.path.join(settings.AUDIO_OUTPUT_DIR, audio_filename)
